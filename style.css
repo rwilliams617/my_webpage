@@ -1,0 +1,99 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+footer {
+	position: relative;
+  top: 125px;
+  text-align: center;
+}
+
+ul {
+	text-align: right;
+	margin-right: 25px
+}
+
+h1 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 5rem;
+	display: inline-block;
+}
+
+p {
+	font-family: 'Cutive Mono', monospace;
+	font-size: 1.2rem;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}	
+
+a img { 
+ 	display: none;
+ 	z-index: 1;
+ 	opacity: 0.5; 
+ 	height: 250px;
+ 	width: 350px;
+}
+
+a:hover img { 
+	display: list-item;
+	position: fixed; 
+}
+
+#home, #next {
+	font-size: 3rem;
+	list-style: none;
+	display: inline-block;
+	margin: 20px;
+	font-weight: bolder;
+}
+
+#home a, #next a {
+	color: #f5f5f5;
+}
+
+#p1, #p2 {
+	color: #f5f5f5;
+	text-align: justify;
+	margin: 20px 20px 20px 20px
+}
+
+/*Animation configurations ( duration and fill mode )*/
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+/*Pulse animation*/
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+.main {
+	text-align: center;
+	z-index: 2;
+}
+
+.likes {
+	background-color: #d86d23;
+}
+
+.title {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 5rem;
+	text-align: left;
+	margin-left: 25px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+	color: #f5f5f5;
+}
